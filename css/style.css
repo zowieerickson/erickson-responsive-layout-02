@@ -5,7 +5,7 @@
 /* || General Styles ------------------- */
 
 body {
-  background-color: mistyrose;
+  background-color: #40c4ff;
   line-height: 1.5;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
@@ -50,6 +50,7 @@ ul {
 }
 
 .nav a {
+  display: block;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -71,6 +72,10 @@ ul {
   margin-bottom: 7%;
   font-size: 2em;
   font-weight: bold;
+}
+
+.nav a:hover {
+  color: paleturquoise;
 }
 
 header img {
@@ -137,6 +142,10 @@ aside {
 }
 
 /* Footer ------------------- */
+
+hr {
+  width: 90%;
+}
 
 footer li {
   font-weight: bold;
