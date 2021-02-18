@@ -4,37 +4,45 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Erickson Responsive Layout</title>
   </head>
+
   <body>
+    <!-- Wrapper -->
     <!-- Nav -->
-    <nav class="main-nav">
-      <ul class="nav">
-        <li class="name">Student Name</li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
 
     <!-- Header -->
-    <header>
+    <header id="main-header">
+      <ul class="nav">
+        <li>Zowie Erickson</li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <img
+        class="site-logo"
+        src="images/responsive-layout-profile.png"
+        alt="Student profile picture"
+      />
       <p>
         Hi! I'm a front-end developer who loves responsive design and css. I
         recently finished learning front-end web development at Treehouse and am
         excited to put all my skills to use!
       </p>
-      <img
-        src="images/responsive-layout-profile.png"
-        alt="Student profile picture"
-      />
     </header>
 
     <!-- Main -->
     <main>
-      <h6 class="header-transform">Portfolio</h6>
-      <section id="portfolio">
+      <h5 id="portfolio" class="header-transform">Portfolio</h5>
+      <section>
         <!-- Project 1 -->
         <article class="projects">
           <img src="images/portfolio-1.png" alt="Marketing page picture" />
@@ -102,7 +110,7 @@
 
     <!-- Aside (Contact) -->
     <aside>
-      <h6 class="header-transform">Contact</h6>
+      <h5 id="contact" class="header-transform">Contact</h5>
       <p>
         If you're interested in chatting or want more information about what
         I've been working on, I'd love to hear from you!
@@ -113,12 +121,10 @@
 
     <!-- Footer -->
     <hr />
-    <footer>
+    <footer class="main-footer">
       <ul>
-        <li>Student Name</li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li>Zowie Erickson</li>
+        <li><a href="#main-header">Back to top</a></li>
       </ul>
     </footer>
   </body>
