@@ -17,9 +17,9 @@
   <body>
     <!-- Nav -->
     <nav>
+      <h1 id="name">Zowie Erickson</h1>
       <ul id="main-nav" class="nav">
-        <li>Zowie Erickson</li>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="#name">Home</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -43,64 +43,69 @@
     <main>
       <h3 id="portfolio" class="header-transform">Portfolio</h3>
       <!-- Project 1 -->
-      <article class="projects">
-        <img src="images/portfolio-1.png" alt="Marketing page picture" />
-        <h4>Marketing Page</h4>
-        <p>
-          This project shows the front page of a marketing website meant for a
-          specific business I'm interested in.
-        </p>
-      </article>
+      <div class="row">
+        <article id="first-project" class="projects">
+          <img src="images/portfolio-1.png" alt="Marketing page picture" />
+          <h4>Marketing Page</h4>
+          <p>
+            This project shows the front page of a marketing website meant for a
+            specific business I'm interested in.
+          </p>
+        </article>
 
-      <!-- Project 2 -->
-      <article class="projects">
-        <img src="images/portfolio-2.png" alt="Search page picture" />
-        <h4>Search Page</h4>
-        <p>
-          This project searches through a speciic database to find information
-          that the user is trying to look up.
-        </p>
-      </article>
+        <!-- Project 2 -->
+        <article class="projects">
+          <img src="images/portfolio-2.png" alt="Search page picture" />
+          <h4>Search Page</h4>
+          <p>
+            This project searches through a speciic database to find information
+            that the user is trying to look up.
+          </p>
+        </article>
 
-      <!-- Project 3 -->
-      <article class="projects">
-        <img src="images/portfolio-3.png" alt="Travel app picture" />
-        <h4>Travel App</h4>
-        <p>
-          This project compares travel times based on different transportation
-          methods and tells you the best one.
-        </p>
-      </article>
+        <!-- Project 3 -->
+        <article class="projects">
+          <img src="images/portfolio-3.png" alt="Travel app picture" />
+          <h4>Travel App</h4>
+          <p>
+            This project compares travel times based on different transportation
+            methods and tells you the best one.
+          </p>
+        </article>
 
-      <!-- Project 4 -->
-      <article class="projects">
-        <img src="images/portfolio-4.png" alt="Map project picture" />
-        <h4>Map of Favorite Spots</h4>
-        <p>
-          This project uses mapping apis to plot points for my favorite spots in
-          the city for a do-it-yourself walking tour.
-        </p>
-      </article>
+        <!-- Project 4 -->
+        <article class="projects">
+          <img src="images/portfolio-4.png" alt="Map project picture" />
+          <h4>Map of Favorite Spots</h4>
+          <p>
+            This project uses mapping apis to plot points for my favorite spots
+            in the city for a do-it-yourself walking tour.
+          </p>
+        </article>
 
-      <!-- Project 5 -->
-      <article class="projects">
-        <img src="images/portfolio-5.png" alt="Photo gallery project picture" />
-        <h4>Photo Gallery</h4>
-        <p>
-          This project shows pictures from a recent trip to the viewer and
-          allows them to easily navigate through the photos.
-        </p>
-      </article>
+        <!-- Project 5 -->
+        <article class="projects">
+          <img
+            src="images/portfolio-5.png"
+            alt="Photo gallery project picture"
+          />
+          <h4>Photo Gallery</h4>
+          <p>
+            This project shows pictures from a recent trip to the viewer and
+            allows them to easily navigate through the photos.
+          </p>
+        </article>
 
-      <!-- Project 6 -->
-      <article class="projects">
-        <img src="images/portfolio-6.png" alt="Calculator project picture" />
-        <h4>Calculator</h4>
-        <p>
-          Someone can enter in the numbers they want, and press the big blue
-          button and get the result.
-        </p>
-      </article>
+        <!-- Project 6 -->
+        <article class="projects">
+          <img src="images/portfolio-6.png" alt="Calculator project picture" />
+          <h4>Calculator</h4>
+          <p>
+            Someone can enter in the numbers they want, and press the big blue
+            button and get the result.
+          </p>
+        </article>
+      </div>
     </main>
 
     <!-- Aside (Contact) -->
@@ -110,7 +115,7 @@
         If you're interested in chatting or want more information about what
         I've been working on, I'd love to hear from you!
       </p>
-      <p>Phone <span class="contact-info">+1(111)555-1234</span></p>
+      <p>Phone <span class="contact-info">+1 (111) 555-1234</span></p>
       <p>Email <span class="contact-info"> email@yoursite.com</span></p>
     </aside>
 
@@ -119,7 +124,10 @@
     <footer class="main-footer">
       <ul>
         <li>Zowie Erickson</li>
-        <li><a href="#main-nav">Back to top</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#name">Home</a></li>
+        <li><a href="#name">Back to top</a></li>
       </ul>
     </footer>
   </body>

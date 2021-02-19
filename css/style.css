@@ -45,18 +45,12 @@ a:visited {
 
 /* || Header and Main Nav ------------------- */
 
-#main-header,
-.nav {
-  display: flex;
-  flex-direction: column;
-}
-
 ul {
   padding: 0;
 }
 
 .nav a {
-  display: block;
+  /* display: block; */
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -66,18 +60,19 @@ ul {
   text-align: center;
   background-color: snow;
   margin-bottom: 5px;
-  display: block;
+  /* display: block; */
   padding: 0.5em 0;
   font-size: 1em;
 }
 
-.nav li:first-child {
+#name {
   background-color: transparent;
   border: none;
   padding: 6px 0;
   margin-bottom: 7%;
   font-size: 2em;
   font-weight: bold;
+  text-align: center;
 }
 
 .nav a:hover {
@@ -85,8 +80,8 @@ ul {
 }
 
 .nav li {
-  width: 80%;
-  margin: 8px auto;
+  width: 90%;
+  margin: 5px auto;
 }
 
 header img {
@@ -125,7 +120,7 @@ main h4 {
   text-transform: uppercase;
   text-align: center;
   padding-top: 3em;
-  font-size: 1em;
+  font-size: smaller;
   font-weight: 900;
 }
 
@@ -143,8 +138,7 @@ main h4 {
 }
 
 article img {
-  width: 100%;
-  max-width: 325px;
+  width: 90%;
 }
 
 .contact-info {
@@ -166,28 +160,60 @@ footer li {
   font-weight: bold;
   text-transform: uppercase;
   list-style-type: none;
-  display: inline-block;
   float: right;
   margin: 20px 0 40px 0;
-  padding-right: 20px;
+  padding-right: 5%;
+  display: none;
 }
 
-footer li:first-child {
+footer li:first-child,
+footer li:nth-child(5n) {
   text-transform: none;
   float: left;
-  margin: 20px 0 40px 0;
-  padding-left: 20px;
+  padding-left: 5%;
+  display: inline-block;
 }
 
-/* Media Queries ------------------*/
+footer li:nth-child(5n) {
+  text-transform: uppercase;
+  float: right;
+}
+
+/* footer li:nth-child(4n +1) {
+  float: right;
+} */
+
+/* Media Queries ----------------------------*/
 
 @media screen and (min-width: 768px) {
-  #main-header {
-    height: 200px;
+  #main-header,
+  .nav {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  #main-nav {
+    height: 10vh;
+    margin-bottom: 10%;
+    width: 50%;
+    align-items: center;
+    margin: auto;
   }
 
   #main-header img {
-    width: 140px;
+    display: inline;
+    padding: 0 20px;
+    float: right;
+    order: 2;
+    align-self: flex-start;
+  }
+
+  #main-header p {
+    float: left;
+    order: 1;
+    text-align: left;
   }
 
   .nav {
@@ -195,30 +221,96 @@ footer li:first-child {
     flex-direction: row;
   }
 
-  /* .nav li:nth-child(n + 2) {
+  .nav li {
+    background-color: transparent;
+  }
+
+  #name {
+    margin-bottom: 2.5rem;
+  }
+
+  /* Body */
+
+  #first-project {
+    padding-top: 0;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .projects {
+    flex: 50%;
+  }
+
+  #contact,
+  aside p:first-child,
+  aside p:nth-child(2n) {
+    padding-bottom: 2rem;
+  }
+
+  aside p:nth-child(2n) {
+    margin: 0 20%;
+  }
+
+  footer li:first-child,
+  footer li:nth-child(5n) {
+    text-transform: none;
+    float: left;
+    padding-left: 5%;
     display: inline-block;
   }
 
-  ul {
-    margin: auto;
-    padding-inline-start: 0;
+  footer li:nth-child(4n),
+  footer li:nth-child(3n),
+  footer li:nth-child(2n) {
+    display: inline-block;
+    text-transform: uppercase;
+    float: right;
   }
 
-  .nav li:first-child {
-    margin: auto;
+  footer li:nth-child(5n) {
+    display: none;
+  }
+
+  footer {
+    padding-bottom: 8rem;
+    font-size: smaller;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #name {
+    display: inline-block;
+    float: left;
+    margin-bottom: 0;
+    margin-left: 5%;
+  }
+
+  .nav {
+    display: flex;
+  }
+
+  /* .nav li {
+    display: inline-block;
+    width: 20%;
+    float: right; 
+  }*/
+
+  /* .row {
+    justify-content: center;
   } */
 
-  /* Not done yet */
   .projects {
-    display: inline-block;
-    width: 45%;
+    flex: 30%;
   }
 
-  .projects img {
-    min-width: 370px;
+  aside p:nth-child(2n) {
+    margin: 0 25%;
   }
 
-  .projects:last-child {
-    padding-bottom: 20px;
+  footer {
+    padding-bottom: 0;
   }
 }
