@@ -96,10 +96,14 @@ header {
 
 /* Main ------------------- */
 
+#portfolio {
+  padding-bottom: 2rem;
+}
+
 main p,
 aside {
-  padding: 0 20px 20px 20px;
-  margin: 20px;
+  padding: 0 20px 0 20px;
+  margin: 10px;
 }
 
 main p:last-child {
@@ -108,7 +112,7 @@ main p:last-child {
 }
 
 main h4 {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .header-transform {
@@ -116,11 +120,12 @@ main h4 {
   text-align: center;
   padding-top: 3em;
   font-size: 1em;
+  font-weight: 900;
 }
 
 .projects {
   text-align: center;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
 }
 
 .projects:last-child {
