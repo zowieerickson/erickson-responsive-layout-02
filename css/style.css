@@ -78,6 +78,11 @@ ul {
   color: paleturquoise;
 }
 
+.nav li {
+  width: 80%;
+  margin: 8px auto;
+}
+
 header img {
   display: block;
   width: 70%;
@@ -164,3 +169,36 @@ footer li:first-child {
 }
 
 /* Media Queries ------------------*/
+
+@media screen and (min-width: 768px) {
+  .nav {
+    width: 80%;
+  }
+
+  .nav li:nth-child(n + 2) {
+    display: inline-block;
+  }
+
+  ul {
+    margin: auto;
+    padding-inline-start: 0;
+  }
+
+  .nav li:first-child {
+    margin: auto;
+  }
+
+  /* Not done yet */
+  .projects {
+    display: inline-block;
+    width: 45%;
+  }
+
+  .projects img {
+    min-width: 370px;
+  }
+
+  .projects:last-child {
+    padding-bottom: 20px;
+  }
+}
