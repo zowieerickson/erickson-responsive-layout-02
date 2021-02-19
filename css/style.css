@@ -45,6 +45,12 @@ a:visited {
 
 /* || Header and Main Nav ------------------- */
 
+#main-header,
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+
 ul {
   padding: 0;
 }
@@ -176,11 +182,20 @@ footer li:first-child {
 /* Media Queries ------------------*/
 
 @media screen and (min-width: 768px) {
-  .nav {
-    width: 80%;
+  #main-header {
+    height: 200px;
   }
 
-  .nav li:nth-child(n + 2) {
+  #main-header img {
+    width: 140px;
+  }
+
+  .nav {
+    margin-top: 3em;
+    flex-direction: row;
+  }
+
+  /* .nav li:nth-child(n + 2) {
     display: inline-block;
   }
 
@@ -191,7 +206,7 @@ footer li:first-child {
 
   .nav li:first-child {
     margin: auto;
-  }
+  } */
 
   /* Not done yet */
   .projects {
