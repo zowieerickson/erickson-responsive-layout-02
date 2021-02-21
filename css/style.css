@@ -91,14 +91,19 @@ header img {
   padding: 8% 0;
 }
 
+header p {
+  padding-bottom: 3rem;
+}
+
 header {
   margin: 0 20px;
 }
 
 /* Main ------------------- */
 
-#portfolio {
-  padding-bottom: 2rem;
+#portfolio,
+#skills {
+  padding-bottom: 3rem;
 }
 
 main p,
@@ -120,11 +125,12 @@ main h4 {
   text-transform: uppercase;
   text-align: center;
   padding-top: 3em;
-  font-size: smaller;
+  /* font-size: smaller; */
   font-weight: 900;
 }
 
-.projects {
+.projects,
+.skills {
   text-align: center;
   /* padding-bottom: 20px; */
 }
@@ -216,6 +222,10 @@ footer li:nth-child(5n) {
     text-align: left;
   }
 
+  .nav a:hover {
+    color: white;
+  }
+
   .nav {
     margin-top: 3em;
     flex-direction: row;
@@ -240,7 +250,8 @@ footer li:nth-child(5n) {
     flex-wrap: wrap;
   }
 
-  .projects {
+  .projects,
+  .skills {
     flex: 50%;
   }
 
@@ -262,6 +273,7 @@ footer li:nth-child(5n) {
     display: inline-block;
   }
 
+  footer li:nth-child(5n),
   footer li:nth-child(4n),
   footer li:nth-child(3n),
   footer li:nth-child(2n) {
@@ -270,7 +282,7 @@ footer li:nth-child(5n) {
     float: right;
   }
 
-  footer li:nth-child(5n) {
+  footer li:nth-child(6n) {
     display: none;
   }
 
@@ -286,17 +298,40 @@ footer li:nth-child(5n) {
     float: left;
     margin-bottom: 0;
     margin-left: 5%;
+    margin-top: 15px;
+    font-size: 1.5em;
   }
 
-  .nav {
+  #main-nav {
+    margin-top: 2rem;
+    float: right;
+    width: 42%;
+  }
+
+  nav ul {
     display: flex;
+    margin-top: 2rem;
   }
 
-  /* .nav li {
-    display: inline-block;
-    width: 20%;
-    float: right; 
-  }*/
+  #main-header {
+    clear: both;
+    margin: 0 auto;
+    padding-top: 2%;
+    width: 95%;
+  }
+
+  header img {
+    min-width: 450px;
+    width: 100%;
+  }
+
+  header p {
+    line-height: 1.8rem;
+    margin-left: 2.5%;
+    margin-top: 0;
+    margin-right: 1.6rem;
+    /* font-size: 1rem; */
+  }
 
   /* .row {
     justify-content: center;
@@ -313,4 +348,13 @@ footer li:nth-child(5n) {
   footer {
     padding-bottom: 0;
   }
+
+  main {
+    width: 97%;
+    margin: auto;
+  }
+}
+
+.full-wrapper {
+  margin-top: 1rem;
 }
