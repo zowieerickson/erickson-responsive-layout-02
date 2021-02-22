@@ -173,14 +173,14 @@ footer li {
 }
 
 footer li:first-child,
-footer li:nth-child(5n) {
+footer li:nth-child(6n) {
   text-transform: none;
   float: left;
   padding-left: 5%;
   display: inline-block;
 }
 
-footer li:nth-child(5n) {
+footer li:nth-child(6n) {
   text-transform: uppercase;
   float: right;
 }
